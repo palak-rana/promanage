@@ -1,0 +1,266 @@
+.maincontainer{
+    width: 100%;
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+}
+
+.copied{
+    position: absolute;
+    top: 0px;
+    right: 1rem;
+    background-color: #F6FFF9;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #48C1B5;
+}
+
+.selectedbtnred{
+    background-color: #CF3636!important;
+    color: white!important;
+}
+
+.selectedbtngreen{
+    background-color: #63C05B!important;
+    color: white!important;
+}
+.maincontainer .usernamedate{
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+}
+
+.maincontainer .usernamedate p:first-child{
+    font-weight: 600;
+}
+.maincontainer .usernamedate p:last-child{
+    color: gray;
+}
+.maincontainer .titledate{
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+}
+
+.maincontainer .titledate > p:nth-child(1){
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+.maincontainer .titledate > p:nth-child(2){
+    cursor: pointer;
+    position: relative;
+}
+
+.maincontainer .titledate > div{
+    position: absolute;
+    width: 8rem;
+    height: 6rem;
+    top : 6rem;
+    right: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 23px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+}
+.maincontainer .titledate > div > p{
+    margin: 0px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}   
+.maincontainer .sectioncontainer{
+    margin-left: 2rem;
+    height: 80%;
+    display: flex;
+    overflow:auto;
+}
+
+.maincontainer .sectioncontainer .section{
+    min-width: 23rem;
+    background-color: #EEF2F5;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.maincontainer .sectioncontainer .section .sectioncardcontainer{
+    height: 90%;
+    width: 100%;
+    padding-right: 10px;
+    overflow: auto;
+}
+.maincontainer .sectioncontainer .section .sectiontitlecollapse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maincontainer .sectioncontainer .section .sectiontitlecollapse > p{
+    font-weight: 500;
+}
+.maincontainer .sectioncontainer .section .sectiontitlecollapse img{
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.maincontainer .sectioncontainer .section .sectiontitlecollapse > div{
+    display: flex;
+    align-items: center;
+}
+
+.maincontainer .sectioncontainer .section .sectiontitlecollapse > div img:first-child{
+    margin-right: 8px;
+    height: 1rem;
+    cursor: pointer;
+}
+.maincontainer .sectioncontainer .section .sectiontitlecollapse > div img:last-child{
+    cursor: pointer;
+}
+.maincontainer .sectioncontainer .section .sectioncard{
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .priority{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .priority p{
+    color: gray;
+}
+.maincontainer .sectioncontainer .section .sectioncard .priority > div{
+    display: flex;
+    align-items: center;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .priority .popupcard{
+    position: absolute;
+    width: 6rem;
+    /* height: 4rem; */
+    right: 0px;
+    top : 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    box-shadow: 0px 8px 23px rgba(0,0,0,0.1);
+}
+.maincontainer .sectioncontainer .section .sectioncard .priority .popupcard p{
+    margin: 0px;
+    font-size: 14px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    color: black;
+}
+.maincontainer .sectioncontainer .section .sectioncard .priority .popupcard p:last-child{
+    color: red;
+}
+.maincontainer .sectioncontainer .section .sectioncard .priority .threedotclass{
+    width: 2rem;
+    height: 1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.maincontainer .sectioncontainer .section .sectioncard .priority  img{
+    cursor: pointer;
+}
+.maincontainer .sectioncontainer .section .sectioncard .priority p{
+    font-size: 10px;
+    margin-left: 8px;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard > h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.maincontainer .sectioncontainer .section .sectioncard .checklistclass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Loading{
+    margin-left: 2rem;
+}
+.maincontainer .sectioncontainer .section .sectioncard .checklistclass > p{
+    font-weight: 500;
+}
+.maincontainer .sectioncontainer .section .sectioncard .checklistclass img{
+    height: 10px;
+    width: 12px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #EEECEC;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .inputcheck{
+    position: relative;
+}
+.maincontainer .sectioncontainer .section .sectioncard .inputcheck input:first-child{
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .inputcheck input:last-child{
+    height: 2rem;
+    border-radius: 10px;
+    border: 3px solid #4D40551A;
+    width: 90%;
+    margin-bottom: 8px;
+    outline: none;
+    padding-left: 2rem;
+    font-size: 1rem;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .datetype{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .datetype button{
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    font-size: 11px;
+    color: gray;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .datetype > button{
+    background-color: #DBDBDB;
+    color: #5A5A5A
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .datetype div > button{
+    margin-right: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.maincontainer .sectioncontainer .section .sectioncard .datetype div > button:hover{
+    background-color: darkgray;
+    color: white;
+}
+.notselected{
+    background-color: white !important;
+}
+.maincontainer .sectioncontainer .section .sectioncard .datetype div > button:last-child{
+    margin-right: 0px;
+}
